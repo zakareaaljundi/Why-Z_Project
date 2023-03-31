@@ -1,0 +1,9 @@
+$primary-color: #000;
+$secondary-color: #fff;
+$light-color: #f8f9fa;
+$changeable-color: red;
+$main-logo-lights-color: rgba(0, 255, 195, 0.253);
+
+:export {
+    changeableColor: $changeable-color;
+}

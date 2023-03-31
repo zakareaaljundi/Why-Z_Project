@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why-Z</title>
+    <link rel="icon" href="./images/heading-icon.png">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Arvo&family=Bree+Serif&family=Courgette&family=Domine:wght@700&family=Fredoka+One&family=Great+Vibes&family=Montserrat:wght@400;500&family=Noto+Serif+Toto:wght@700&family=Nunito+Sans:wght@600&family=Permanent+Marker&family=Roboto+Serif:opsz,wght@8..144,200;8..144,300&family=Roboto+Slab:wght@300;400&family=Roboto:ital,wght@0,100;0,300;0,500;1,500&family=Rowdies&family=Satisfy&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- <style>
+        svg {
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .container-1 {
+            display: inline-block;
+            position: absolute;
+            width: 100%;
+            padding-bottom: 100%;
+            vertical-align: middle;
+            overflow: hidden;
+            top: 0;
+            left: 0;
+        }
+        .body {
+            overflow: hidden;
+        }
+    </style> -->
+</head>
+<body>
+    <div class="nav align-items-center ">
+        <!-- <img src="../images/Untitled3.png" alt="" class="img-fluid"> -->
+        <div class="container pt-3 pt-md-0 px-lg-5">
+            <div class="d-flex flex-column align-items-center justify-content-between px-lg-5 flex-md-row text-center pt-3">
+                <div class="main-logo d-flex align-items-center justify-content-center px-3 py-2 position-relative" style="overflow: hidden;">
+                    <i class="material-icons fs-1 pe-2">devices</i>
+                    <div class="mainLogoTest"></div>
+                    <h3>W</h3>
+                    <h3>h</h3>
+                    <h3>y</h3>
+                    <h3 class="dash">-</h3>
+                    <h3>Z</h3>
+                    <!-- <i class="fa-solid fa-w fs-2 ps-2"></i>
+                    <i class="fa-solid fa-h fs-2"></i>
+                    <i class="fa-solid fa-y fs-2"></i>
+                    <i class="fa-solid fa-z fs-2 ps-2"></i> -->
+                    <!-- <div class="lights">
+                        <div class="light-1"></div>
+                        <div class="light-2"></div>
+                    </div> -->
+                </div>
+                <!-- <img src="../images/main-logo.png" alt="" class="img-fluid "> -->
+                <div class="main-paragraph text-center p-4 fs-sm-5 fs-md-3">
+                    <h4></h4><span>|</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="second-nav navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid container-md">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <i class="material-icons fs-4 pe-1">devices</i>
+                Why-Z
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ps-5">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Websites</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mobile Apps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li> -->
+                </ul>
+                <div class="box">
+                    <div class="form-box position-relative d-inline">
+                        <form class="d-inline-flex pe-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" onfocus="inputFocus()" onblur="inputBlur()">
+                            <button class="btn rounded-circle" type="submit" title="Submit">
+                                <i class="fa-solid fa-search fs-5"></i>
+                            </button>
+                        </form>
+                        <button class="keyboardBtn">
+                            <i>keyboard_hide</i>
+                        </button>
+                    </div>
+                    <div class="theKeyboard" id="dragAble">
+                        <div id="dragZone">
+                            <span>Keyboard</span>
+                            <span class="keyboardCloseBtn">&times;</span>
+                        </div>
+                        <div>
+                            <button class="tapBtn">
+                                <i>keyboard_tab</i>
+                            </button>
+                            <button class="theLetterBtn">
+                                <span>`</span>
+                                <span>ذ</span>
+                            </button>
+                            <button class="theLetterBtnExtend">
+                                <span>~</span>
+                            </button>
+                            <button class="theLetterBtn">
+                                <span>1</span>
+                                <span>1</span>
+                            </button>
+                            <button class="theLetterBtnExtend">
+                                <span>!</span>
+                            </button>
+                            <button class="theLetterBtn">
+                                <span>2</span>
+                                <span>2</span>
+                            </button>
+                            <button class="theLetterBtnExtend">
+                                <span>@</span>
+                            </button>
+                            <button class="theLetterBtn">
+                                <span>3</span>
+                                <span>3</span>
+                            </button>
+                            <button class="theLetterBtnExtend">
+                                <span>#</span>
+                            </button>
+                            <button class="theLetterBtn">
+                                <span>4</span>
+                                <span>4</span>
+                            </button>
+                            <button class="theLetterBtnExtend">
+                                <span>$</span>
+                            </button>
+                            <button class="theLetterBtn">
+                                <span>5</span>
+                                <span>5</span>
+                            </button>
+                            <button class="theLetterBtnExtend">
+                                <span>%</span>
+                            </button>
+                            <button class="theLetterBtn">
+                                <span>6</span>
+                                <span>6</span>
+                            </button>
+                            <button class="theLetterBtnExtend">
+                                <span>^</span>
+                            </button>
+                            <button class="theLetterBtn">
+                                <span>7</span>
+                                <span>7</span>
+                            </button>
+                            <button class="theLetterBtnExtend">
+                                <span>&</span> 
+                            </button>
+                            <button class="theLetterBtn">
+                                <span>8</span>
+                                <span>8</span>
+                            </button>
+                            <button class="theLetterBtnExtend">
+                                <span>*</span>
+                            </button>
+                            <button class="theLetterBtn">
+                                <span>9</span>
+                                <span>9</span>
+                            </button>
+                            <button class="theLetterBtnExtend">
+                                <span>(</span>
+                            </button>
+                            <button class="theLetterBtn">
+                                <span>0</span>
+                                <span>0</span>
+                            </button>
+                            <button class="theLetterBtnExtend">
+                                <span>)</span>
+                            </button>
+                            <button class="deleteBtn">
+                                <i>more</i>
+                            </button>
+                        </div>
+                        <div>
+                            <button class="theLetterBtn">
+                                <span>q</span>
+                                <span>ض</span>
+                            </button>
+                            <button class="theLetterBtnExtend">
+                                <span>_</span>
+                            </button>
+                            <button class="theLetterBtn">
+                                <span>w</span>
+                                <span>ص</span>
+                            </button>
+                            <button class="theLetterBtnExtend">
+                                <span>-</span>
+                            </button>
+                            <button class="theLetterBtn">
+                                <span>e</span>
+                                <span>ث</span>
+                            </button>
+                            <button class="theLetterBtnExtend">
+                                <span>+</span>
+                            </button>
+                            <button class="theLetterBtn">
+                                <span>r</span>
+                                <span>ق</span>
+                            </button>
+                            <button class="theLetterBtnExtend">
+                                <span>=</span>
+                            </button>
+                            <button class="theLetterBtn">
+                                <span>t</span>
+                                <span>ف</span>
+                            </button>
+                            <button class="theLetterBtnExtend">
+                                <span>{</span>
+                            </button>
+                            <button class="theLetterBtn">
+                                <span>y</span>
+                                <span>غ</span>
+                            </button>
+                            <button class="theLetterBtnExtend">
+                                <span>}</span>
+                            </button>
+                            <button class="theLetterBtn">
+                                <span>u</span>
+                                <span>ع</span>
+                            </button>
+                            <button class="theLetterBtnExtend">
+                                <span>|</span>
+                            </button>
+                            <button class="theLetterBtn">
+                                <span>i</span>
+                                <span>ه</span>
+                            </button>
+                            <button class="theLetterBtnExtend">
+                                <span>\</span>
+                            </button>
+                            <button class="theLetterBtn">
+                                <span>o</span>
+                                <span>خ</span>
+                            </button>
+                            <button class="theLetterBtnExtend">
+                                <span>‘</span>
+                            </button>
+                            <button class="theLetterBtn">
+                                <span>p</span>
+                                <span>ح</span>
+                            </button>
+                            <button class="theLetterBtnExtend">
+                                <span>÷</span>
+                            </button>
+                            <button class="theLetterBtn">
+                                <span>[</span>
+                                <span>ج</span>
+                            </button>
+                            <button class="theLetterBtnExtend">
+                                <span>×</span>
+                            </button>
+                            <button class="theLetterBtn">
+                                <span>]</span>
+                                <span>د</span>
+                            </button>
+                            <button class="theLetterBtnExtend">
+                                <span>؛</span>
+                            </button>
+                        </div>
+                        <div>
+                            <button class="theLetterBtn">
+                                <span>a</span>
+                                <span>ش</span>
+                            </button>
+                            <button class="theLetterBtnExtend">
+                                <span>،</span>
+                            </button>
+                            <button class="theLetterBtn">
+                                <span>s</span>
+                                <span>س</span>
+                            </button>
+                            <button class="theLetterBtnExtend">
+                                <span>/</span>
+                            </button>
+                            <button class="theLetterBtn">
+                                <span>d</span>
+                                <span>ي</span>
+                            </button>
+                            <button class="theLetterBtnExtend">
+                                <span>"</span>
+                            </button>
+                            <button class="theLetterBtn">
+                                <span>f</span>
+                                <span>ب</span>
+                            </button>
+                            <button class="theLetterBtnExtend">
+                                <span>[</span>
+                            </button>
+                            <button class="theLetterBtn">
+                                <span>g</span>
+                                <span>ل</span>
+                            </button>
+                            <button class="theLetterBtnExtend">
+                                <span>]</span>
+                            </button>
+                            <button class="theLetterBtn">
+                                <span>h</span>
+                                <span>ا</span>
+                            </button>
+                            <button class="theLetterBtnExtend">
+                                <span>.</span>
+                            </button>
+                            <button class="theLetterBtn">
+                                <span>j</span>
+                                <span>ت</span>
+                            </button>
+                            <button class="theLetterBtnExtend">
+                                <span>؟</span>
+                            </button>
+                            <button class="theLetterBtn">
+                                <span>k</span>
+                                <span>ن</span>
+                            </button>
+                            <button class="theLetterBtnExtend">
+                                <span>`</span>
+                            </button>
+                            <button class="theLetterBtn">
+                                <span>l</span>
+                                <span>م</span>
+                            </button>
+                            <button class="theLetterBtnExtend">
+                                <span>لإ</span>
+                            </button>
+                            <button class="theLetterBtn">
+                                <span>;</span>
+                                <span>ك</span>
+                            </button>
+                            <button class="theLetterBtnExtend">
+                                <span>:</span>
+                            </button>
+                            <button class="theLetterBtn">
+                                <span>'</span>
+                                <span>ط</span>
+                            </button>
+                            <button class="theLetterBtnExtend">
+                                <span>"</span>
+                            </button>
+                        </div>
+                        <div>
+                            <button class="theLetterBtn">
+                                <span>z</span>
+                                <span>ئ</span>
+                            </button>
+                            <button class="theLetterBtnExtend">
+                                <span>إ</span>
+                            </button>
+                            <button class="theLetterBtn">
+                                <span>x</span>
+                                <span>ء</span>
+                            </button>
+                            <button class="theLetterBtnExtend">
+                                <span>لأ</span>
+                            </button>
+                            <button class="theLetterBtn">
+                                <span>c</span>
+                                <span>ؤ</span>
+                            </button>
+                            <button class="theLetterBtnExtend">
+                                <span>أ</span>
+                            </button>
+                            <button class="theLetterBtn">
+                                <span>v</span>
+                                <span>ر</span>
+                            </button>
+                            <button class="theLetterBtnExtend">
+                                <span>لآ</span>
+                            </button>
+                            <button class="theLetterBtn">
+                                <span>b</span>
+                                <span>لا</span>
+                            </button>
+                            <button class="theLetterBtnExtend">
+                                <span>آ</span>
+                            </button>
+                            <button class="theLetterBtn">
+                                <span>n</span>
+                                <span>ى</span>
+                            </button>
+                            <button class="theLetterBtnExtend">
+                                <span>ّ</span>
+                            </button>
+                            <button class="theLetterBtn">
+                                <span>m</span>
+                                <span>ة</span>
+                            </button>
+                            <button class="theLetterBtnExtend">
+                                <span>ْ</span>
+                            </button>
+                            <button class="theLetterBtn">
+                                <span>,</span>
+                                <span>و</span>
+                            </button>
+                            <button class="theLetterBtnExtend">
+                                <span>&lt;</span>
+                            </button>
+                            <button class="theLetterBtn">
+                                <span>.</span>
+                                <span>ز</span>
+                            </button>
+                            <button class="theLetterBtnExtend">
+                                <span>&gt;</span>
+                            </button>
+                            <button class="theLetterBtn">
+                                <span>/</span>
+                                <span>ظ</span>
+                            </button>
+                            <button class="theLetterBtnExtend">
+                                <span>?</span>
+                            </button>
+                        </div>
+                        <div>
+                            <button class="languageBtn">
+                                <i>language</i>
+                            </button>
+                            <button class="upperBtn">
+                                <!-- <i>format_size</i> -->
+                                <span >A&#160;&#160;</span>
+                                <span class="letterGreenLabel">a</span>
+                            </button>
+                            <button class="spaceBtn">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</button>
+                            <button class="accessoriesBtn">
+                                <i>more_horiz</i>
+                            </button>
+                            <button class="clearBtn">
+                                <i>cancel</i>
+                            </button>
+                        </div>
+                    </div>
+                    <button class="btn dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-gear spinner-gear "></i>
+                    </button>
+                    <div class="dropdown-menu py-2 px-3">
+                        <h6>Secondary Colors</h6>
+                        <ul class="colors navbar list-unstyled justify-content-around align-items-center px-2">
+                            <li class="active" data-color="green" title="Green"></li>
+                            <li data-color="#0d6efd" title="Blue"></li>
+                            <li data-color="#ffd707" title="Yellow"></li>
+                            <li data-color="purple" title="Purple"></li>
+                            <li data-color="brown" title="Brown"></li>
+                            <li data-color="gray" title="Gray"></li>
+                            <li data-color="orange" title="Orange"></li>
+                            <li data-color="#f68fa1" title="Pink"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="main-video">
+        <div class="container-fluid p-0">
+            <video width="100%" autoplay loop muted poster="../images/large.png">
+                <source src="./images/WhatsApp Video 2023-01-12 at 22.16.36.mp4" type="video/mp4" >
+                your browser does not support video tag 
+            </video>
+            <h1 class="py-5 text-uppercase">looking for someone to design your own website & mobile app <span>??</span></h1>
+        </div>
+    </div>
+    <div class="do-you-have-an-idea text-center ">
+        <div class="container py-5">
+            <div class="main-logo-sections position-relative d-inline-block mx-auto text-center">
+                <img src="./images/the-main-logo-for-sections.webp" alt="" style="width: 20%;">
+                <h2>Gide Section</h2>
+                <h6>Why-Z Team</h6>
+            </div>
+            <div class="box d-flex flex-column align-items-center">
+                <img src="./images/upper-frame.png" alt="" class="img-fluid pt-5">
+                <div class="h1-lines"></div>
+                <img src="./images/lower-frame.png" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <!-- <div class="examples text-center">
+        <div class="container">
+            <div class="row algin-center">
+                <div class="col-sm-12 col-md-6 col-lg-4 my-2">
+                    <img src="../images/responsive-web-design-icon.webp" alt="" class="img-fluid">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 my-2">
+                    <img src="../images/examples-3.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 my-2">
+                    <img src="../images/examples-2.jpeg" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="what-you-should-do py-3 text-center">
+        <div class="container">
+            <div class="row text-center py-5">
+                <div class="what-tou-should-do-text col-lg-4 text-md-start d-flex ">
+                    <h2 class="my-auto">&#9724; Well All What you Have To Do Is To Follow These Four Steps...</h2>
+                    <!-- <div class="test">
+                        <img src="../images/number-1.png" alt="">
+                        <img src="../images/number-2.png" alt="">
+                        <img src="../images/number-3.png" alt="">
+                        <img src="../images/number-4.png" alt="">
+                    </div> -->
+                </div>
+                <div class="col-lg-8">
+                    <img src="./images/examples-1.png" alt="" class="img-fluid mt-4">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="step-one">
+        <div class="container text-center py-4">
+            <div class="main-logo-sections position-relative d-inline-block mx-auto text-center">
+                <img src="./images/the-main-logo-for-sections.webp" alt="" style="width: 20%;">
+                <h2>Steps Section</h2>
+                <img src="./images/number-1.png" alt="" class="number-one-img py-2">
+                <img src="./images/number-2.png" alt="" class="number-one-img py-2">
+                <img src="./images/number-3.png" alt="" class="number-one-img py-2">
+                <img src="./images/number-4.png" alt="" class="number-one-img py-2">
+                <h6>Why-Z Team</h6>
+            </div>
+        </div>
+    </div>
+    <!-- <iframe id="inlineFrameExample"
+    title="Inline Frame Example"
+    width="300"
+    height="200"
+    src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
+    </iframe> -->
+    <!-- <div class="body" style="text-align:center;">
+        <h1 style="color:white;">
+            Geeks For Geeks
+        </h1>
+        
+        <div class="container-1">
+            <svg viewBox="0 0 500 500"
+                preserveAspectRatio="xMinYMin meet"
+                style="z-index: -2;">
+                
+                <path d="M0, 100 C150, 200 350,
+                    0 500, 100 L500, 00 L0, 0 Z"
+                    style="stroke: none;
+                    fill:rgba(30, 144, 225, 0.5);">
+                </path>
+            </svg>
+        </div>
+        
+        <div class="container-1">
+            <svg viewBox="0 0 500 500"
+                preserveAspectRatio="xMinYMin meet"
+                style="z-index:-1;">
+                
+                <path d="M0, 80 C300, 0 400,
+                    300 500, 50 L500, 00 L0, 0 Z"
+                    style="stroke: none;
+                    fill:rgba(153, 50, 204, 0.5);">
+                </path>
+            </svg>
+        </div>
+        
+        <div class="container-1">
+            <svg viewBox="0 0 500 500"
+                preserveAspectRatio="xMinYMin meet"
+                style="z-index:-3;">
+                
+                <path d="M0, 100 C150, 300 350,
+                    0 500, 100 L500, 00 L0, 0 Z"
+                    style="stroke: none;
+                    fill:rgba(220, 20, 60, 0.5);">
+                </path>
+            </svg>
+        </div>
+    </div> -->
+
+    <script  src="./main.js"></script>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
